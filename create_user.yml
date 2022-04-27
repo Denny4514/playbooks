@@ -1,0 +1,7 @@
+---
+- name: my palybook1
+  hosts: all
+  become: yes
+  tasks:
+  - name: creating a user siddu
+    user: name=siddu

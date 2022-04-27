@@ -1,0 +1,8 @@
+---
+- name: my playbook1
+  hosts: all
+  become: yes
+  tasks:
+  - name: creating a user friend
+    user:
+      name: friend

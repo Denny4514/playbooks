@@ -1,0 +1,9 @@
+---
+- name: my playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: install packages
+    yum:
+      name: tree
+      state: installed
